@@ -1,0 +1,52 @@
+// Variables
+
+// __________COLORS__________
+
+//  Primary__
+
+$clr__softRed: hsl(7, 99%, 70%);
+$clr__yellow: hsl(51, 100%, 49%);
+$clr__lightBlue: hsla(0, 0%, 100%, 0.25);
+
+// Secondary__
+
+$clr__darkCyanDesaturated: hsl(167, 40%, 24%); // graphic design text
+$clr__darkBlue: hsl(198, 62%, 26%); // photography text
+$clr__darkCyanModerate: hsl(168, 38%, 52%); // footer
+
+// Neutral__
+
+$clr__gray-1: hsl(212, 27%, 19%);
+$clr__gray-2: hsl(213, 9%, 39%);
+$clr__gray-3: hsl(232, 10%, 55%);
+$clr__offWhite: hsl(210, 4%, 67%);
+$clr__white: hsl(0, 0%, 100%);
+
+// __________TYPOGRAPHY__________
+
+$fs__body: 18px;
+$ff__primary: "Barlow", sans-serif; // 600
+$ff__secondary: "Fraunces", serif; // 700 , 900 | headings , btns
+$fw__bold: 900;
+$fw__medium: 700;
+$fw__light: 600;
+
+// __________OTHER__________ ( all units must be in ems || rems )
+
+$headerHeight: 75vh;
+$navHeight: 5rem;
+$serviceHeight: 65vh;
+$headerLinksWidth: 27rem;
+$footerHeight: $headerHeight / 2;
+$footerLinksWidth: $headerLinksWidth / 1.65;
+
+$desktopHorizonPadding: 11rem;
+$mobileHorizonPadding: 1.5rem;
+
+$smallSpacing: 1.5rem;
+$spacing: 2.5rem;
+
+$smallLineHeight: 1.65rem;
+$lineHeight: 2rem;
+
+$transition: all 0.4s;

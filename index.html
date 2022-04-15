@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External files -->
+    <title>Sunnyside agency landing page | Frontend Mentor</title>
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Sass -->
+    <link rel="stylesheet" href="/src/scss/app.scss" />
+    <!-- Js -->
+    <script type="module" src="/src/js/script.js"></script>
+  </head>
+  <body>
+    <!-- __________START SECTION HEADER__________ -->
+    <section class="header">
+      <!-- _____START DESKTOP NAV_____ -->
+      <div class="header__desktopNav">
+        <div class="header__desktopNav__logo">
+          <img src="../images/logo-header.svg" />
+        </div>
+        <ul class="header__desktopNav__links">
+          <li>
+            <a href="#" class="header__desktopNav__links__link">About</a>
+          </li>
+          <li>
+            <a href="#" class="header__desktopNav__links__link">Services</a>
+          </li>
+          <li>
+            <a href="#" class="header__desktopNav__links__link">Projects</a>
+          </li>
+          <button class="header__desktopNav__links__button">Contact</button>
+        </ul>
+      </div>
+      <!-- _____END DESKTOP NAV_____ -->
+      <!-- _____START MOBILE NAV_____ -->
+      <div class="header__mobileNav">
+        <div class="header__mobileNav__logo">
+          <img src="../images/logo-header.svg" />
+        </div>
+        <!-- Menu -->
+        <div data-opened="false" class="header__mobileNav__menu">
+          <span class="header__mobileNav__menu__line header__mobileNav__menu__line-1"></span>
+          <span class="header__mobileNav__menu__line header__mobileNav__menu__line-2"></span>
+          <span class="header__mobileNav__menu__line header__mobileNav__menu__line-3"></span>
+        </div>
+        <!-- Dropdown -->
+        <div class="header__mobileNav__dropdown">
+          <ul class="header__mobileNav__dropdown__links">
+            <li>
+              <a href="#" class="header__mobileNav__dropdown__links__link">About</a>
+            </li>
+            <li>
+              <a href="#" class="header__mobileNav__dropdown__links__link">Services</a>
+            </li>
+            <li>
+              <a href="#" class="header__mobileNav__dropdown__links__link">Projects</a>
+            </li>
+            <button class="header__mobileNav__dropdown__links__button">Contact</button>
+          </ul>
+        </div>
+      </div>
+      <!-- _____END MOBILE NAV_____ -->
+      <div class="header__center">
+        <h1 class="header__center__heading">We are creatives</h1>
+        <i class="fas fa-long-arrow-alt-down header__center__arrowImage"></i>
+      </div>
+    </section>
+    <!-- __________END SECTION HEADER__________ -->
+
+    <!-- __________START SECTION SERVICE__________ -->
+
+    <section class="services">
+      <div class="services__firstService">
+        <div class="services__firstService__leftSide">
+          <h2 class="services__firstService__leftSide__heading">
+            Transform your<br />
+            brand
+          </h2>
+          <p class="services__firstService__leftSide__desc">
+            We are a full-service creative agency specializing in helping brands grow fast. Engage
+            your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <a href="#" class="services__firstService__leftSide__link">Learn more</a>
+        </div>
+        <div class="services__firstService__rightSide"></div>
+      </div>
+      <div class="services__secondService">
+        <div class="services__secondService__leftSide">
+          <h2 class="services__secondService__leftSide__heading">
+            Stand out to the right<br />
+            audience
+          </h2>
+          <p class="services__secondService__leftSide__desc">
+            Using a collaborative formula of designers, researchers, photographers, videographers,
+            and copywriters, we’ll build and extend your brand in digital places.
+          </p>
+          <a href="#" class="services__secondService__leftSide__link">Learn more</a>
+        </div>
+        <div class="services__secondService__rightSide"></div>
+      </div>
+      <div class="services__thirdService">
+        <div class="services__thirdService__leftSide">
+          <div class="services__thirdService__leftSide__title">
+            <h3 class="services__thirdService__leftSide__title__heading">Graphic design</h3>
+            <p class="services__thirdService__leftSide__title__desc">
+              Great design makes you memorable. We deliver artwork that underscores your brand
+              message and captures potential clients' attention.
+            </p>
+          </div>
+        </div>
+        <div class="services__thirdService__rightSide">
+          <div class="services__thirdService__leftSide__title">
+            <h3 class="services__thirdService__leftSide__title__heading">Photography</h3>
+            <p class="services__thirdService__leftSide__title__desc">
+              Increase your credibility by getting the most stunning, high-quality photos that
+              improve your business image.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- __________END SECTION SERVICE__________ -->
+
+    <!-- __________START SECTION TESTIMONIAL__________ -->
+
+    <section class="testimonials">
+      <h2 class="testimonials__heading">Client testimonials</h2>
+
+      <div class="testimonials__container">
+        <div class="testimonials__container__testimonial">
+          <img class="testimonials__container__testimonial__img" src="../images/image-emily.jpg" />
+          <p class="testimonials__container__testimonial__desc">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and
+            deadlines were always hit.
+          </p>
+          <h4 class="testimonials__container__testimonial__name">Emily R.</h4>
+          <small class="testimonials__container__testimonial__job">Marketing Director</small>
+        </div>
+
+        <div class="testimonials__container__testimonial">
+          <img class="testimonials__container__testimonial__img" src="../images/image-thomas.jpg" />
+          <p class="testimonials__container__testimonial__desc">
+            Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a
+            satisfying and enjoyable experience.
+          </p>
+          <h4 class="testimonials__container__testimonial__name">Thomas S.</h4>
+          <small class="testimonials__container__testimonial__job">Chief Operating Officer</small>
+        </div>
+
+        <div class="testimonials__container__testimonial">
+          <img class="testimonials__container__testimonial__img" src="../images/image-jennie.jpg" />
+          <p class="testimonials__container__testimonial__desc">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+            Highly recommended!
+          </p>
+          <h4 class="testimonials__container__testimonial__name">Jennie F.</h4>
+          <small class="testimonials__container__testimonial__job">Business Owner</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- __________END SECTION TESTIMONIAL__________ -->
+
+    <!-- __________START SECTION GALLERY__________ -->
+
+    <section class="gallery">
+      <div class="gallery__photo-1 gallery__photo">
+        <img src="../images/desktop/image-gallery-milkbottles.jpg" />
+      </div>
+      <div class="gallery__photo-2 gallery__photo">
+        <img src="../images/desktop/image-gallery-orange.jpg" />
+      </div>
+      <div class="gallery__photo-3 gallery__photo">
+        <img src="../images/desktop/image-gallery-cone.jpg" />
+      </div>
+      <div class="gallery__photo-4 gallery__photo">
+        <img src="../images/desktop/image-gallery-sugarcubes.jpg" />
+      </div>
+    </section>
+
+    <!-- __________END SECTION GALLERY__________ -->
+
+    <!-- __________START SECTION FOOTER__________ -->
+
+    <section class="footer">
+      <img src="../images/logo-footer.svg" class="footer__logo" />
+      <ul class="footer__links">
+        <li class="footer__links__link"><a href="#">About</a></li>
+        <li class="footer__links__link"><a href="#">Services</a></li>
+        <li class="footer__links__link"><a href="#">Projects</a></li>
+      </ul>
+      <div class="footer__social">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest"></i>
+      </div>
+    </section>
+
+    <!-- __________END SECTION FOOTER__________ -->
+  </body>
+</html>

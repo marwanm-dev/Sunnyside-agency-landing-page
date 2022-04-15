@@ -1,0 +1,71 @@
+@use '../base' as *;
+
+.testimonials {
+  @include flexContainer(column, center);
+  padding: 10rem 5rem;
+
+  // Media Queries__
+  @include media(tablet) {
+    padding: 2rem 0rem;
+  }
+  @include media(mobile) {
+    text-align: center;
+    padding: 2rem 0.75rem;
+  }
+  &__heading {
+    color: $clr__gray-3;
+    letter-spacing: 0.35rem;
+    text-transform: uppercase;
+  }
+
+  &__container {
+    margin-top: 5rem;
+    @include flexContainer(row, center);
+    gap: 2rem;
+
+    // Media Queries__
+    @include media(tablet) {
+      @include flexContainer(column);
+      gap: 4rem;
+    }
+    @include media(mobile) {
+      @include flexContainer(column);
+      gap: 5rem;
+    }
+
+    &__testimonial {
+      text-align: center;
+      &__img {
+        width: 4rem;
+        border-radius: 2rem;
+      }
+      &__desc {
+        color: $clr__gray-2;
+        max-width: 25rem;
+        line-height: $smallLineHeight;
+        padding: {
+          top: $spacing;
+          bottom: $spacing;
+        }
+
+        // Media Queries__
+        @include media(tablet) {
+          max-width: 26rem;
+        }
+        @include media(mobile) {
+          max-width: 32rem;
+          padding: {
+            top: $smallSpacing;
+            bottom: $smallSpacing;
+          }
+        }
+      }
+      &__name {
+        color: $clr__gray-1;
+      }
+      &__job {
+        color: $clr__gray-3;
+      }
+    }
+  }
+}

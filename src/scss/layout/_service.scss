@@ -1,0 +1,235 @@
+@use '../base' as *;
+
+// __________START SERVICE__________
+
+.services {
+  & > * {
+    height: $serviceHeight;
+    padding-bottom: 0.5rem;
+    // Media Queries__
+    @include media(tablet) {
+      text-align: center;
+    }
+    @include media(mobile) {
+      text-align: center;
+    }
+  }
+
+  &__firstService {
+    @include flexContainer(row);
+
+    // Media Queries__
+    @include media(tablet) {
+      @include flexContainer(column, center, initial, true);
+    }
+    @include media(mobile) {
+      @include flexContainer(column, center, initial, true);
+    }
+
+    &__leftSide {
+      flex-basis: 50%;
+      height: 100%;
+      padding: 9.5rem;
+
+      // Media Queries__
+      @include media(desktop) {
+        padding: 7.5rem;
+      }
+      @include media(laptop) {
+        padding: 3.5rem;
+      }
+      @include media(tablet) {
+        padding: 1rem 0;
+      }
+      @include media(mobile) {
+        padding: 1rem 0;
+      }
+
+      &__heading {
+        color: $clr__gray-1;
+        line-height: $lineHeight;
+      }
+      &__desc {
+        color: $clr__gray-3;
+        line-height: $smallLineHeight;
+        max-width: 27.5rem;
+        margin: {
+          top: $smallSpacing;
+          bottom: $smallSpacing;
+        }
+
+        // Media Queries__
+        @include media(desktop) {
+          max-width: 35rem;
+        }
+        @include media(laptop) {
+          max-width: 40rem;
+        }
+        @include media(tablet) {
+          margin: $smallSpacing auto;
+        }
+      }
+      &__link {
+        @include link(9.375rem, 3.125rem, true);
+        color: $clr__gray-1;
+      }
+    }
+    &__rightSide {
+      flex-basis: 50%;
+      height: 100%;
+      background: {
+        image: url(../../../images/desktop/image-transform.jpg);
+        size: cover;
+        position: center;
+      }
+
+      // Media Queries__
+      @include media(tablet) {
+        width: 100%;
+        background: {
+          size: 72%;
+        }
+      }
+    }
+  }
+  &__secondService {
+    @include flexContainer(row, space-between, center, true);
+
+    // Media Queries__
+    @include media(tablet) {
+      @include flexContainer(column, center, initial, true);
+    }
+    @include media(mobile) {
+      @include flexContainer(column, center, initial, true);
+    }
+
+    &__leftSide {
+      @extend .services__firstService__leftSide;
+      &__heading {
+        @extend .services__firstService__leftSide__heading;
+      }
+      &__desc {
+        @extend .services__firstService__leftSide__desc;
+      }
+      &__link {
+        @extend .services__firstService__leftSide__link;
+        &::before {
+          background: $clr__softRed;
+        }
+      }
+    }
+    &__rightSide {
+      @extend .services__firstService__rightSide;
+      background-image: url(../../../images/desktop/image-stand-out.jpg);
+    }
+  }
+  &__thirdService {
+    @include flexContainer(row);
+
+    // Media Queries__
+    @include media(tablet) {
+      @include flexContainer(column, center, center, true);
+    }
+    @include media(mobile) {
+      @include flexContainer(column, center, center, true);
+    }
+
+    & > * {
+      height: $serviceHeight;
+      text-align: center;
+    }
+    &__leftSide {
+      flex-basis: 50%;
+      position: relative;
+      background: {
+        image: url(../../../images/desktop/image-graphic-design.jpg);
+        size: cover;
+        position: center;
+      }
+
+      // Media Queries__
+      @include media(tablet) {
+        width: 100%;
+        background: {
+          size: 72%;
+        }
+      }
+      @include media(mobile) {
+        width: 100%;
+        background: {
+          size: 72%;
+        }
+      }
+
+      &__title {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        bottom: $smallSpacing;
+        transform: translateX(-50%);
+        &__heading {
+          color: $clr__darkCyanDesaturated;
+        }
+        &__desc {
+          color: $clr__darkCyanModerate;
+          max-width: 22rem;
+          margin: {
+            top: $smallSpacing;
+            bottom: $smallSpacing;
+          }
+
+          // Media Queries__
+          @include media(tablet) {
+            max-width: 25rem;
+          }
+          @include media(mobile) {
+            max-width: 30rem;
+          }
+        }
+      }
+    }
+    &__rightSide {
+      flex-basis: 50%;
+      position: relative;
+      background: {
+        image: url(../../../images/desktop/image-photography.jpg);
+        size: cover;
+        position: center;
+      }
+
+      // Media Queries__
+      @include media(tablet) {
+        width: 100%;
+        background: {
+          size: 72%;
+        }
+      }
+      @include media(mobile) {
+        width: 100%;
+        background: {
+          size: 72%;
+        }
+      }
+
+      &__title {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        bottom: $smallSpacing;
+        transform: translateX(-50%);
+        &__heading {
+          color: $clr__darkCyanDesaturated;
+        }
+        &__desc {
+          color: $clr__darkCyanModerate;
+          max-width: 22rem;
+          margin: {
+            top: $smallSpacing;
+            bottom: $smallSpacing;
+          }
+        }
+      }
+    }
+  }
+}
+// __________END SERVICE__________

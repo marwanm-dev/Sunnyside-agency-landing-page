@@ -1,0 +1,160 @@
+@use '../base' as *;
+
+// __________START HEADER__________
+
+.header {
+    height: $headerHeight;
+    background: {
+        image: url(../../../images/desktop/image-header.jpg);
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+
+    // __________START DESKTOP NAV__________
+    &__desktopNav {
+        width: 100%;
+        height: $navHeight;
+        padding: 0 $desktopHorizonPadding;
+        @include flexContainer(row);
+
+        // MediaQueries
+        @include media(desktop) {
+            padding: 0 ($desktopHorizonPadding - 2.5rem);
+        }
+        @include media(laptop) {
+            padding: 0 $mobileHorizonPadding;
+        }
+        @include media(tablet) {
+            // JavaScript To change the nav
+        }
+        &__links {
+            width: $headerLinksWidth;
+            @include flexContainer(row);
+
+            &__link {
+                color: $clr__white;
+            }
+            &__button {
+                background: $clr__white;
+                @include button(8.75rem, 3.125rem);
+                &:hover {
+                    background: $clr__lightBlue;
+                    color: $clr__white;
+                    animation: pulse 1s ease-in-out infinite;
+                }
+            }
+        }
+    }
+    // __________END DESKTOP NAV__________
+
+    // __________START MOBILE NAV__________
+
+    &__mobileNav {
+        width: 100%;
+        height: $navHeight;
+        position: relative;
+        padding: 0 $mobileHorizonPadding;
+        @include flexContainer(row);
+
+        &__menu {
+            width: 2.8rem;
+            height: 2.8rem;
+            background: $clr__lightBlue;
+            cursor: pointer;
+            position: relative;
+
+            &__line {
+                width: 1.5rem;
+                height: 0.125rem;
+                position: absolute;
+                background: $clr__white;
+            }
+            &__line-1 {
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+            &__line-2 {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+            &__line-3 {
+                top: 75%;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+        }
+        &__dropdown {
+            background: $clr__white;
+            position: absolute;
+            left: $mobileHorizonPadding;
+            right: $mobileHorizonPadding;
+            top: $navHeight + 1.5rem;
+            padding: 2rem;
+            z-index: 100;
+            transform: translate(17.5rem, -10rem) scale(0);
+
+            &::before {
+                width: 0;
+                height: 0;
+                border-bottom: 2rem solid $clr__white;
+                border-left: 2rem solid transparent;
+                top: -2rem;
+                right: 0;
+                @include pseudo;
+            }
+
+            &__links {
+                height: 12rem;
+                text-align: center;
+                @include flexContainer(column);
+
+                &__link {
+                    color: $clr__gray-3;
+                }
+                &__button {
+                    background: $clr__yellow;
+                    @include button(12rem, 2.8rem);
+
+                    &:hover {
+                        animation: pulse 1s ease-in-out infinite;
+                        background: darken($clr__yellow, 5%);
+                    }
+                }
+            }
+        }
+    }
+
+    // __________END MOBILE NAV__________
+    &__center {
+        width: 100%;
+        height: 20%;
+        margin: 3rem auto;
+        @include flexContainer(column);
+
+        // Media Queries
+        @include media(mobile) {
+            height: 15%;
+            margin: 6rem auto;
+        }
+
+        &__heading {
+            color: $clr__white;
+        }
+        &__arrowImage {
+            font-size: 4rem;
+            color: $clr__white;
+            transform: scaleY(1.25);
+            animation: arrow 2s linear infinite;
+
+            // Media Queries
+            @include media(mobile) {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+// __________END HEADER__________

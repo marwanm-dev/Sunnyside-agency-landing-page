@@ -1,0 +1,77 @@
+@use 'vars' as *;
+@use 'mixins' as *;
+
+// Typography
+
+// Default__
+html {
+    font-size: $fs__body;
+}
+
+// FontFamily__
+body {
+    font-family: $ff__primary;
+}
+h1,
+h2,
+h3,
+h4,
+button {
+    font-family: $ff__secondary;
+}
+
+// FontWeight__
+h1,
+h2,
+h3,
+h4 {
+    font-weight: $fw__bold;
+}
+p {
+    font-weight: $fw__light;
+}
+button {
+    font-weight: $fw__medium;
+}
+
+// FontSize__
+h1 {
+    font-size: 2rem;
+
+    // Media Queries
+    @include media(laptop) {
+        font-size: 1.85rem;
+    }
+    @include media(tablet) {
+        font-size: 1.5rem;
+    }
+    @include media(mobile) {
+        font-size: 1.075rem;
+    }
+}
+h2 {
+    font-size: 1.65rem;
+
+    // Media Queries
+    @include media(tablet) {
+        font-size: 1.45rem;
+    }
+    @include media(mobile) {
+        font-size: 1.35rem;
+    }
+}
+h3 {
+    font-size: 1.35rem;
+
+    // Media Queries
+    @include media(mobile) {
+        font-size: 1.125rem;
+    }
+}
+
+// Other__
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.35rem;
+    word-spacing: 0.25rem;
+}

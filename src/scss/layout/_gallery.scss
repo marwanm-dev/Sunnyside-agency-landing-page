@@ -1,0 +1,18 @@
+@use '../base' as *;
+
+.gallery {
+  @include flexContainer(row, center);
+
+  // Media queries__
+  @include media(tablet) {
+    @include flexContainer(column, center);
+  }
+  @include media(mobile) {
+    @include flexContainer(column, center);
+  }
+  &__photo {
+    img {
+      max-width: 100%;
+    }
+  }
+}
