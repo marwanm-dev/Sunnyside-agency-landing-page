@@ -9,7 +9,7 @@
 
 # Live
 
-- https://marodevv-sunnyside-agency-landing-page.pages.dev/
+- https://marodevv-sunnyside-agency-landing-page.vercel.app
 
 # Credit
 
