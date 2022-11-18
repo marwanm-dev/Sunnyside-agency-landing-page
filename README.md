@@ -10,7 +10,7 @@
 
 ## Live
 
-> https://marwanmodev-sunnyside-agency-landing-page.vercel.app
+> https://marwanm-sunnyside-agency-landing-page.vercel.app
 
 ## Credit
 
